@@ -19,7 +19,7 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
 
 void setup() {
   Serial.begin(115200);
-  Serial.println("Scanning...");
+  Serial.println("BLE Scanning...");
 
   BLEDevice::init("");
   pBLEScan = BLEDevice::getScan(); //create new scan
